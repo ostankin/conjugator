@@ -1,0 +1,25 @@
+{
+  "name": "conjugator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/app.js",
+  "scripts": {
+    "test": "rollup -c rollup.spec.config.js && jasmine",
+    "assets": "cp src/index.html out/",
+    "assets:debug": "onchange \"out/*.html\" -v -- npm run assets",
+    "js": "rollup -c",
+    "js:debug": "rollup -c -w --environment DEBUG",
+    "build": "npm run assets && npm run js",
+    "build:debug": "parallelshell \"npm run assets:debug\" \"npm run js:debug\""
+  },
+  "author": "Vlad Nikiforov",
+  "license": "WTFNMFPL-1.0",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "onchange": "^3.2.1",
+    "parallelshell": "^2.0.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^3.2.2"
+  }
+}
