@@ -9,4 +9,4 @@ This is actually my first Javascript project bigger than a couple of classes. Ne
 * `index.html` - HTML page with a minimalistic UI
 * `app.js` - the application logic compiled into a single Javascript file
 
-[Try it out](http://ostankin.github.io/conjugator/out/index.html).
+[Try it out](https://ostankin.github.io/conjugator/out/).
